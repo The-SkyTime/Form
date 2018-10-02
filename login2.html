@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Butron Education</title>
+    <style>
+        div.but {
+            width: 500px;
+            padding: 10px;
+        }
+        div.form-froup {
+            width: 500px;
+            padding: 10px;
+        }
+        input {
+            float: right;
+            width: 300px;
+        }
+        input.but {
+            width:80px;
+        }
+        input.gender {
+            float: left;
+            width: 10px;
+        }
+        input.check {
+            float: left;
+            width: 10px;
+        }
+        textarea.check {
+            float: right;
+        }
+        select.sel {
+            float: right;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Voorbeeldformulier</h1>
+    </section>
+    <form action="https://www.savatarian.com/html5/form.php" method="post">
+        <div class="form-froup">
+            <label for="voornaam">Voornaam </label>
+            <input type="text" name="voornaam" required>
+        </div>
+        <div class="form-froup">
+            <label for="tussenvoegsel">Tussenvoegsel </label>
+            <input type="text" name="tussenvoegsel">
+        </div>
+        <div class="form-froup">
+            <label for="achternaam">Achternaam </label>
+            <input type="text" name="achternaam" required>
+        </div>
+        <div class="form-froup" aria-required="true">
+            Geslacht<br>
+            <input class="gender" type="radio" name="gender" value="Man" checked> Man<br>
+            <input class="gender" type="radio" name="gender" value="vrouw"> Vrouw
+        </div>
+        <div class="form-froup">
+            Kleur ogen
+            <select class="sel">
+                <option value="groen">Groen</option>
+                <option value="blauw">Blauw</option>
+                <option value="bruin">Bruin</option>
+            </select>
+        </div>
+        <div class="form-froup">
+            Geboortedatum
+            <input type="date" name="bday" required>
+        </div>
+        <div class="form-froup">
+            Omschrijving
+            <textarea class="check" name="message" rows="10" cols="50"></textarea>
+        </div>
+        <br><br><br><br><br><br><br>
+        <div class="form-froup">
+            Lekker eten:<br>
+            <input class="check" type="checkbox" name="spercibonen" value="Spercibonen"> Spercibonen<br>
+            <input class="check" type="checkbox" name="aardappelen" value="Aardappelen"> Aardappelen<br>
+            <input class="check" type="checkbox" name="hamburger" value="Hamburger"> Hamburger
+        </div>
+
+        <div class="but">
+            <input class="but" type="submit" value="Ok">
+            <input class="but" type="reset" value="Annuleer">
+        </div>
+
+    </form>
+</body>
+</html>
